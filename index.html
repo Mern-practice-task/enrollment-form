@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+
+</head>
+<body>
+
+<h2>Student Course Enrollment Form</h2>
+
+<form action="/submit" method="post" enctype="multipart/form-data">
+  <label for="firstName">First Name:</label><br>
+  <input type="text" id="firstName" name="firstName" required><br><br>
+
+  <label for="lastName">Last Name:</label><br>
+  <input type="text" id="lastName" name="lastName" required><br><br>
+
+  <label for="registerNumber">Register Number:</label><br>
+  <input type="text" id="registerNumber" name="registerNumber" required><br><br>
+
+  <label for="mobileNumber">Mobile Number:</label><br>
+  <input type="tel" id="mobileNumber" name="mobileNumber" required><br><br>
+
+  <label for="gender">Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <label for="email">Email ID:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="department">Department:</label><br>
+  <input type="text" id="department" name="department" required><br><br>
+
+  <label for="year">Year:</label><br>
+  <input type="number" id="year" name="year" required><br><br>
+
+  <label for="languages">Languages Known:</label><br>
+  <select id="languages" name="languages[]" multiple required>
+    <option value="C">C</option>
+    <option value="C++">C++</option>
+    <option value="Java">Java</option>
+    <option value="Python">Python</option>
+  </select><br><br>
+
+  <label for="slots">Available Slots:</label><br>
+  <select id="slots" name="slots" required>
+    <option value="10am">10am</option>
+    <option value="2pm">2pm</option>
+    <option value="5pm">5pm</option>
+  </select><br><br>
+
+  <label for="resume">Resume (PDF):</label><br>
+  <input type="file" id="resume" name="resume" accept=".pdf" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
